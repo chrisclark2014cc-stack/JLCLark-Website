@@ -337,3 +337,22 @@
   .brand-mark{display:none}
   .brand{gap:0}
 }
+
+@media (max-width: 720px) {
+
+  /* Homepage slideshow is not used on mobile */
+  .hero .hero-slides,
+  .hero .slide-dots {
+    display: none !important;
+  }
+
+  /* NICEIC Approved Contractor accreditation must remain visible */
+  .site-header .header-accreditation {
+    display: block !important;
+    width: 72px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    flex: 0 0 auto;
+  }
+}
