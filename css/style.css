@@ -171,13 +171,13 @@
 .page-hero .section-label{margin-bottom:1rem}
 .page-hero h1{max-width:920px;margin:0 0 1.5rem;font-size:5rem;line-height:.96;letter-spacing:-.05em;text-transform:uppercase}
 .page-hero>div>p:last-child{max-width:680px;margin:0;color:#c7c9cb;font-size:1.08rem}
-.electrical-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.86) 34%,rgba(7,8,9,.5) 58%,rgba(7,8,9,.18) 78%,rgba(7,8,9,.08) 100%),url("../images/led panels long.png");background-size:cover;background-position:center 8%;background-repeat:no-repeat}
+.electrical-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.86) 34%,rgba(7,8,9,.5) 58%,rgba(7,8,9,.18) 78%,rgba(7,8,9,.08) 100%),url("../images/led panels long.webp");background-size:cover;background-position:center 8%;background-repeat:no-repeat}
 .electrical-page-hero::after{display:none}
 .electrical-page-hero h1{max-width:720px}
 .electrical-page-hero>div>p:last-child{max-width:650px;color:#e0e1e2}
-.safety-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.9) 0%,rgba(7,8,9,.72) 42%,rgba(7,8,9,.22) 72%,rgba(7,8,9,.08) 100%),url("../images/fire wide.png");background-size:cover;background-position:center 20%;background-repeat:no-repeat}
+.safety-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.9) 0%,rgba(7,8,9,.72) 42%,rgba(7,8,9,.22) 72%,rgba(7,8,9,.08) 100%),url("../images/fire wide.webp");background-size:cover;background-position:center 20%;background-repeat:no-repeat}
 .safety-page-hero::after{display:none}
-.mechanical-page-hero{display:flex;align-items:center;padding:5.5rem 0 6rem;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 32%,rgba(7,8,9,.6) 50%,rgba(7,8,9,.15) 72%,rgba(7,8,9,.04) 100%),url("../images/steam cleaner wide 2.png");background-size:cover;background-position:15% center;background-repeat:no-repeat;color:#fff}
+.mechanical-page-hero{display:flex;align-items:center;padding:5.5rem 0 6rem;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 32%,rgba(7,8,9,.6) 50%,rgba(7,8,9,.15) 72%,rgba(7,8,9,.04) 100%),url("../images/steam cleaner wide 2.webp");background-size:cover;background-position:15% center;background-repeat:no-repeat;color:#fff}
 .mechanical-page-hero::after{display:none}
 .mechanical-hero-content{width:min(var(--container),calc(100% - 3rem));padding:0}
 .mechanical-page-hero .page-breadcrumb{margin-bottom:3.5rem;color:#777c80}
@@ -298,13 +298,13 @@
 
 @media(max-width:720px){
   .page-hero{min-height:680px;padding:4rem 0}
-  .mechanical-page-hero{padding:4rem 0;background-position:61% center;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 58%,rgba(7,8,9,.42) 100%),url("../images/steam cleaner wide 2.png")}
+  .mechanical-page-hero{padding:4rem 0;background-position:61% center;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 58%,rgba(7,8,9,.42) 100%),url("../images/steam cleaner wide 2.webp")}
   .mechanical-hero-content{width:min(100% - 2rem,var(--container))}
   .mechanical-page-hero .page-breadcrumb{margin-bottom:2.5rem}
   .page-breadcrumb{margin-bottom:2rem}
   .page-hero h1{font-size:2.5rem}
-  .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels long.png")}
-  .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire wide.png")}
+  .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels long.webp")}
+  .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire wide.webp")}
   .page-list-panel,.page-card{padding:2rem}
   .page-list{grid-template-columns:1fr}
   .compliance-title{grid-template-columns:1fr}

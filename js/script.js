@@ -4,8 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const slides = [...document.querySelectorAll('.hero-slide')];
   const dots = [...document.querySelectorAll('.slide-dot')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const mobileHero = window.matchMedia('(max-width: 720px)').matches;
   let activeSlide = 0;
   let slideTimer;
+
+  const loadSlide = (slide) => {
+    if (!slide?.dataset.src) return;
+    slide.src = slide.dataset.src;
+    delete slide.dataset.src;
+  };
+
+  if (slides.length && !mobileHero) {
+    loadSlide(slides[0]);
+    window.addEventListener('load', () => slides.slice(1).forEach(loadSlide), { once: true });
+  }
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -39,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   dots.forEach((dot, index) => dot.addEventListener('click', () => {
+    if (!mobileHero) loadSlide(slides[index]);
     showSlide(index);
     startSlideshow();
   }));
