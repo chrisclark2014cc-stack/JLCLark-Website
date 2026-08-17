@@ -171,7 +171,7 @@
 .page-hero .section-label{margin-bottom:1rem}
 .page-hero h1{max-width:920px;margin:0 0 1.5rem;font-size:5rem;line-height:.96;letter-spacing:-.05em;text-transform:uppercase}
 .page-hero>div>p:last-child{max-width:680px;margin:0;color:#c7c9cb;font-size:1.08rem}
-.electrical-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.86) 34%,rgba(7,8,9,.5) 58%,rgba(7,8,9,.18) 78%,rgba(7,8,9,.08) 100%),url("../images/led panels.png");background-size:cover;background-position:center 8%;background-repeat:no-repeat}
+.electrical-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.86) 34%,rgba(7,8,9,.5) 58%,rgba(7,8,9,.18) 78%,rgba(7,8,9,.08) 100%),url("../images/led panels long.png");background-size:cover;background-position:center 8%;background-repeat:no-repeat}
 .electrical-page-hero::after{display:none}
 .electrical-page-hero h1{max-width:720px}
 .electrical-page-hero>div>p:last-child{max-width:650px;color:#e0e1e2}
@@ -298,7 +298,7 @@
   .mechanical-page-hero .page-breadcrumb{margin-bottom:2.5rem}
   .page-breadcrumb{margin-bottom:2rem}
   .page-hero h1{font-size:2.5rem}
-  .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels.png")}
+  .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels long.png")}
   .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire etc.png")}
   .page-list-panel,.page-card{padding:2rem}
   .page-list{grid-template-columns:1fr}
