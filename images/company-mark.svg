@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">J.L. Clark &amp; Son Ltd company mark</title>
+  <desc id="desc">Abstract engineering emblem with a monogram frame and technical lines.</desc>
+  <rect width="120" height="120" rx="18" fill="#EEF2F5"/>
+  <rect x="10" y="10" width="100" height="100" rx="16" fill="#FFFFFF" stroke="#D4DCE3"/>
+  <path d="M32 82V38h16l12 16 12-16h16v44H72V58L60 74 48 58v24H32z" fill="#1C2430"/>
+  <path d="M28 30h64M28 90h64" stroke="#2F597F" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M36 22l12 12M84 22L72 34" stroke="#2F597F" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="60" cy="60" r="5" fill="#2F597F"/>
+</svg>
