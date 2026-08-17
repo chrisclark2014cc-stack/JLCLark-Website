@@ -320,8 +320,9 @@
   .page-contact-cta .container{align-items:flex-start;flex-direction:column}
   .enquiry-form{padding:2rem 1.25rem}
   .enquiry-fields{grid-template-columns:1fr}
-  .hero,.page-hero{background:#0f1011}
-  .hero-slides{display:none}
+  .hero,.page-hero{background-color:#0f1011}
+  .page-hero.electrical-page-hero,.page-hero.mechanical-page-hero,.page-hero.safety-page-hero{background-image:none;background-color:#0f1011}
+  .hero .hero-slides{display:none}
 }
 
 @media(max-width:720px){
