@@ -162,14 +162,14 @@
 .credentials-strip ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;list-style:none;margin:0;padding:0}
 .credentials-strip li{padding:.35rem 0 .35rem 1rem;border-left:3px solid var(--red);color:var(--ink);font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 
-.page-hero{position:relative;overflow:hidden;background:#191b1d;color:#fff;padding:5.5rem 0 6rem}
+.page-hero{position:relative;overflow:hidden;min-height:700px;background:#191b1d;color:#fff;padding:5.5rem 0 6rem}
 .page-hero::after{content:"";position:absolute;right:-8%;top:-70%;width:48%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(196,21,32,.18),rgba(196,21,32,0) 67%);pointer-events:none}
 .page-hero .container{position:relative;z-index:1}
 .page-breadcrumb{display:flex;gap:.7rem;align-items:center;margin:0 0 3rem;color:#8f9498;font-size:.76rem;text-transform:uppercase;letter-spacing:.12em}
 .page-breadcrumb a{color:#fff}
 .page-breadcrumb a:hover{color:var(--red)}
 .page-hero .section-label{margin-bottom:1rem}
-.page-hero h1{max-width:920px;margin:0 0 1.5rem;font-size:clamp(3rem,6vw,5.5rem);line-height:.96;letter-spacing:-.05em;text-transform:uppercase}
+.page-hero h1{max-width:920px;margin:0 0 1.5rem;font-size:5rem;line-height:.96;letter-spacing:-.05em;text-transform:uppercase}
 .page-hero>div>p:last-child{max-width:680px;margin:0;color:#c7c9cb;font-size:1.08rem}
 .electrical-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.86) 34%,rgba(7,8,9,.5) 58%,rgba(7,8,9,.18) 78%,rgba(7,8,9,.08) 100%),url("../images/led panels.png");background-size:cover;background-position:center 8%;background-repeat:no-repeat}
 .electrical-page-hero::after{display:none}
@@ -177,16 +177,25 @@
 .electrical-page-hero>div>p:last-child{max-width:650px;color:#e0e1e2}
 .safety-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.9) 0%,rgba(7,8,9,.72) 42%,rgba(7,8,9,.22) 72%,rgba(7,8,9,.08) 100%),url("../images/fire etc.png");background-size:cover;background-position:center 20%;background-repeat:no-repeat}
 .safety-page-hero::after{display:none}
-.mechanical-page-hero{display:flex;align-items:center;min-height:700px;padding:5.5rem 0 6rem;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 32%,rgba(7,8,9,.6) 50%,rgba(7,8,9,.15) 72%,rgba(7,8,9,.04) 100%),url("../images/steam-pressure-washer-hds-7-10-4-m-1077915-std-05.webp");background-size:cover;background-position:15% center;background-repeat:no-repeat;color:#fff}
+.mechanical-page-hero{display:flex;align-items:center;padding:5.5rem 0 6rem;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 32%,rgba(7,8,9,.6) 50%,rgba(7,8,9,.15) 72%,rgba(7,8,9,.04) 100%),url("../images/steam-pressure-washer-hds-7-10-4-m-1077915-std-05.webp");background-size:cover;background-position:15% center;background-repeat:no-repeat;color:#fff}
 .mechanical-page-hero::after{display:none}
 .mechanical-hero-content{width:min(var(--container),calc(100% - 3rem));padding:0}
 .mechanical-page-hero .page-breadcrumb{margin-bottom:3.5rem;color:#777c80}
 .mechanical-page-hero .page-breadcrumb a{color:#fff}
 .mechanical-page-hero .page-breadcrumb a:hover{color:var(--red)}
-.mechanical-page-hero h1{max-width:760px;margin-bottom:1.6rem;font-size:clamp(3rem,5vw,5rem);line-height:.96}
+.mechanical-page-hero h1{max-width:760px;margin-bottom:1.6rem;line-height:.96}
 .mechanical-hero-lede{max-width:600px;margin:0;color:#e0e1e2;font-size:1.08rem}
 .mechanical-hero-credential{display:flex;align-items:center;gap:.8rem;margin:2rem 0 0;color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
 .mechanical-hero-credential::before{content:"";width:2rem;height:2px;background:var(--red)}
+
+/* Reduce vertical image cropping as full-width heroes become wider. */
+@media(min-width:1400px){
+  .hero,.page-hero{--wide-hero-growth:clamp(0px,calc(18vw - 252px),120px)}
+  .hero{height:calc(clamp(520px,60vh,620px) + var(--wide-hero-growth))}
+  .page-hero{padding-bottom:calc(6rem + var(--wide-hero-growth))}
+  .page-hero{min-height:calc(700px + var(--wide-hero-growth))}
+  .safety-page-hero{background-position:center 32%}
+}
 
 .page-services{background:var(--light)}
 .page-service-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7rem;align-items:start}
@@ -270,6 +279,7 @@
 .safety-cta-copy{max-width:720px;margin:.7rem 0 0;color:var(--muted)}
 
 @media(max-width:1000px){
+  .page-hero h1{font-size:3.75rem}
   .home-cta-inner{grid-template-columns:1fr;gap:1.5rem;align-items:start}
   .credentials-strip ul{grid-template-columns:repeat(2,minmax(0,1fr))}
   .contact-enquiry-grid{grid-template-columns:1fr;gap:3rem}
@@ -282,13 +292,12 @@
 }
 
 @media(max-width:720px){
-  .page-hero{padding:4rem 0}
-  .mechanical-page-hero{min-height:680px;padding:4rem 0;background-position:61% center;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 58%,rgba(7,8,9,.42) 100%),url("../images/steam-pressure-washer-hds-7-10-4-m-1077915-std-05.webp")}
+  .page-hero{min-height:680px;padding:4rem 0}
+  .mechanical-page-hero{padding:4rem 0;background-position:61% center;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 58%,rgba(7,8,9,.42) 100%),url("../images/steam-pressure-washer-hds-7-10-4-m-1077915-std-05.webp")}
   .mechanical-hero-content{width:min(100% - 2rem,var(--container))}
   .mechanical-page-hero .page-breadcrumb{margin-bottom:2.5rem}
-  .mechanical-page-hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}
   .page-breadcrumb{margin-bottom:2rem}
-  .page-hero h1{font-size:clamp(2.5rem,12vw,4rem)}
+  .page-hero h1{font-size:2.5rem}
   .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels.png")}
   .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire etc.png")}
   .page-list-panel,.page-card{padding:2rem}
