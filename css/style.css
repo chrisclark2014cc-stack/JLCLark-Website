@@ -175,7 +175,7 @@
 .electrical-page-hero::after{display:none}
 .electrical-page-hero h1{max-width:720px}
 .electrical-page-hero>div>p:last-child{max-width:650px;color:#e0e1e2}
-.safety-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.9) 0%,rgba(7,8,9,.72) 42%,rgba(7,8,9,.22) 72%,rgba(7,8,9,.08) 100%),url("../images/fire etc.png");background-size:cover;background-position:center 20%;background-repeat:no-repeat}
+.safety-page-hero{background-image:linear-gradient(90deg,rgba(7,8,9,.9) 0%,rgba(7,8,9,.72) 42%,rgba(7,8,9,.22) 72%,rgba(7,8,9,.08) 100%),url("../images/fire wide.png");background-size:cover;background-position:center 20%;background-repeat:no-repeat}
 .safety-page-hero::after{display:none}
 .mechanical-page-hero{display:flex;align-items:center;padding:5.5rem 0 6rem;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.88) 32%,rgba(7,8,9,.6) 50%,rgba(7,8,9,.15) 72%,rgba(7,8,9,.04) 100%),url("../images/steam cleaner wide 2.png");background-size:cover;background-position:15% center;background-repeat:no-repeat;color:#fff}
 .mechanical-page-hero::after{display:none}
@@ -187,6 +187,11 @@
 .mechanical-hero-lede{max-width:600px;margin:0;color:#e0e1e2;font-size:1.08rem}
 .mechanical-hero-credential{display:flex;align-items:center;gap:.8rem;margin:2rem 0 0;color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
 .mechanical-hero-credential::before{content:"";width:2rem;height:2px;background:var(--red)}
+
+@media(min-width:1001px){
+  .hero-inner,.page-hero .container{width:min(calc(var(--container) + 90px),calc(100% - 3rem))}
+  .mechanical-page-hero{background-position:72% center}
+}
 
 /* Reduce vertical image cropping as full-width heroes become wider. */
 @media(min-width:1400px){
@@ -299,7 +304,7 @@
   .page-breadcrumb{margin-bottom:2rem}
   .page-hero h1{font-size:2.5rem}
   .electrical-page-hero{background-position:58% 34%;background-image:linear-gradient(90deg,rgba(7,8,9,.96) 0%,rgba(7,8,9,.82) 60%,rgba(7,8,9,.42) 100%),url("../images/led panels long.png")}
-  .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire etc.png")}
+  .safety-page-hero{background-position:68% center;background-image:linear-gradient(90deg,rgba(7,8,9,.94) 0%,rgba(7,8,9,.82) 58%,rgba(7,8,9,.35) 100%),url("../images/fire wide.png")}
   .page-list-panel,.page-card{padding:2rem}
   .page-list{grid-template-columns:1fr}
   .compliance-title{grid-template-columns:1fr}
