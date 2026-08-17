@@ -107,6 +107,10 @@
 .service-tile strong{font-size:clamp(1.4rem,2.2vw,2.15rem)}
 .service-tile b{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(255,255,255,.24);font-size:1.4rem;transition:background .25s ease,border-color .25s ease}
 .service-tile:hover b{background:var(--red);border-color:var(--red)}
+@media(hover:hover) and (pointer:fine){
+  .service-tile b{transition:background .25s ease,border-color .25s ease,text-indent .25s ease}
+  .service-tile:hover b{background:transparent;border-color:rgba(255,255,255,.24);text-indent:3px}
+}
 .service-tile-graphic{position:absolute;z-index:1;right:-1.25rem;top:50%;width:13rem;height:13rem;transform:translateY(-50%) rotate(-8deg);color:#fff;fill:none;stroke:currentColor;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;opacity:.055;pointer-events:none}
 .service-tile-graphic-bolt{fill:currentColor;stroke:none;transform:translateY(-50%) rotate(5deg)}
 .service-tile-graphic-shield{right:-.5rem;transform:translateY(-50%);stroke-width:8}
